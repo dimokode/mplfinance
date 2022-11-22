@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 # from matplotlib.finance import volume_overlay3
 # finance module is no longer part of matplotlib
 # see: https://github.com/matplotlib/mpl_finance
-from mplfinance import candlestick_ochl as candlestick
-from mplfinance import volume_overlay3
+from mplfinance.original_flavor import candlestick_ochl as candlestick
+from mplfinance.original_flavor import volume_overlay3
 from matplotlib.dates import num2date
 from matplotlib.dates import date2num
 import matplotlib.mlab as mlab
