@@ -40,7 +40,7 @@ data['MA50'] = data['Close'].rolling(50).mean()
 data = data.dropna()
 #print(dat)
 
-print(data.tail())
+#print(data.tail())
 
 
 buy_signals = []
@@ -62,5 +62,5 @@ sell_markers = mpf.make_addplot(sell_signals, type='scatter', markersize=120, ma
 apds = [buy_markers, sell_markers]
 
 
-mpf.plot(data, type='candle', mav=[20, 50], volume=True, addplot=apds, savefig=imageFilename)
+mpf.plot(data, type='candle', style="yahoo", mav=[20, 50], volume=True, addplot=apds, savefig=imageFilename)
 #mpf.savefig(imageFilename)
